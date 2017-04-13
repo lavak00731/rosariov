@@ -2,3 +2,57 @@
     background: url('../img/bg.svg') no-repeat;
     background-size: cover;
 }
+.splash-container {
+    height: 100vh;
+    position: relative;
+    .logo-splash-container {
+        position: absolute;
+        left: 25%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: $white;
+        width: 50%;
+        text-align: center;
+        h1 {
+            font-family: 'Museo Sans 300';
+            font-size: 3rem;
+            text-transform: uppercase;
+            @media (min-width: $screen-sm-min) {
+                font-size: 5rem;
+            }
+            @media (max-width: $screen-sm-min) and (orientation: landscape) {
+                font-size: 2rem;
+            }
+        }
+        i {
+            &::before {
+                font-size: 15rem;
+                @media (min-width: $screen-md-min) {
+                    font-size: 25rem;
+                }
+                @media (max-width: $screen-sm-min) and (orientation: landscape) {
+                    font-size: 10rem;
+                }
+            }
+        }
+    }
+    .rosario-igualdad {
+        position: absolute;
+        left: 25%;
+        bottom: 10vh;
+        width: 50%;
+        img {
+            margin: 0 auto;
+        }
+        @media (min-width: $screen-md-min) {
+            bottom: 7vh;
+        }
+        @media (max-width: $screen-sm-min) and (orientation: landscape) {
+            bottom: 5vh;
+        }
+        @media (min-width: $screen-lg-min) {
+            bottom: 2vh;
+        }
+    }
+}
