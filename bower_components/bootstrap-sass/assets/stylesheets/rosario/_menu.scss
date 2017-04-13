@@ -1,0 +1,61 @@
+.main-nav {
+    position: fixed;
+    top: 50px;
+    -webkit-transition: -webkit-transform 0.5 ease-out;
+    transition: -webkit-transform 0.5 ease-out;
+    transition: transform 0.5 ease-out;
+    height: 100vh;
+    width: 100%;
+    background: $overlay;
+    z-index: 3;
+    &.hidden {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    .main-nav-inner {
+        height: calc( 100vh - 50px);
+        width: 275px;
+        padding: 10px 15px 0 18px;
+        background: url("../img/logogris.svg") -50px bottom no-repeat #ffffff;
+        background-size: 100% auto;
+        overflow-y: auto;
+        a {
+            color: $green;
+            display: block;
+            padding: 8px 0;
+            &:hover {
+                text-decoration: none;
+            }
+            span {
+                font-family: 'Museo Slab 300';
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+                vertical-align: middle;
+                margin-left: 25px;
+            }
+        }
+        i {
+            &::before {
+                font-size: 2.4rem;
+                vertical-align: middle;
+            }
+        }
+        .separator {
+            border-top: 2px solid $green;
+            padding-top: 10px;
+            margin-top: 10px;
+            a {
+                span {
+                    margin-left: 50px;
+                }
+            }
+            + .nav-item {
+                a {
+                    span {
+                        margin-left: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

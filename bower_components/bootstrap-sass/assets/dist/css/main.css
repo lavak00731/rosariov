@@ -8795,7 +8795,7 @@ button.close {
   font-weight: normal;
   font-style: normal;
 }
-/* line 10, ../../stylesheets/rosario/_styleguide.scss */
+/* line 11, ../../stylesheets/rosario/_styleguide.scss */
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -8811,47 +8811,47 @@ button.close {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 24, ../../stylesheets/rosario/_styleguide.scss */
+/* line 25, ../../stylesheets/rosario/_styleguide.scss */
 .icon-arboles:before {
   content: "\e900";
 }
 
-/* line 27, ../../stylesheets/rosario/_styleguide.scss */
+/* line 28, ../../stylesheets/rosario/_styleguide.scss */
 .icon-calendario:before {
   content: "\e901";
 }
 
-/* line 30, ../../stylesheets/rosario/_styleguide.scss */
+/* line 31, ../../stylesheets/rosario/_styleguide.scss */
 .icon-gente:before {
   content: "\e902";
 }
 
-/* line 33, ../../stylesheets/rosario/_styleguide.scss */
+/* line 34, ../../stylesheets/rosario/_styleguide.scss */
 .icon-kiosco:before {
   content: "\e903";
 }
 
-/* line 36, ../../stylesheets/rosario/_styleguide.scss */
+/* line 37, ../../stylesheets/rosario/_styleguide.scss */
 .icon-logo:before {
   content: "\e904";
 }
 
-/* line 39, ../../stylesheets/rosario/_styleguide.scss */
+/* line 40, ../../stylesheets/rosario/_styleguide.scss */
 .icon-lupa:before {
   content: "\e905";
 }
 
-/* line 42, ../../stylesheets/rosario/_styleguide.scss */
+/* line 43, ../../stylesheets/rosario/_styleguide.scss */
 .icon-megafono:before {
   content: "\e906";
 }
 
-/* line 45, ../../stylesheets/rosario/_styleguide.scss */
+/* line 46, ../../stylesheets/rosario/_styleguide.scss */
 .icon-pala:before {
   content: "\e907";
 }
 
-/* line 48, ../../stylesheets/rosario/_styleguide.scss */
+/* line 49, ../../stylesheets/rosario/_styleguide.scss */
 .icon-reciclaje:before {
   content: "\e908";
 }
@@ -9060,6 +9060,70 @@ header.navbar-fixed-top .app-name {
   float: none;
   display: block;
   margin: 15px auto;
+}
+
+/* line 1, ../../stylesheets/rosario/_menu.scss */
+.main-nav {
+  position: fixed;
+  top: 50px;
+  -webkit-transition: -webkit-transform 0.5 ease-out;
+  transition: -webkit-transform 0.5 ease-out;
+  transition: transform 0.5 ease-out;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+}
+/* line 11, ../../stylesheets/rosario/_menu.scss */
+.main-nav.hidden {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+/* line 15, ../../stylesheets/rosario/_menu.scss */
+.main-nav .main-nav-inner {
+  height: calc( 100vh - 50px);
+  width: 275px;
+  padding: 10px 15px 0 18px;
+  background: url("../img/logogris.svg") -50px bottom no-repeat #ffffff;
+  background-size: 100% auto;
+  overflow-y: auto;
+}
+/* line 22, ../../stylesheets/rosario/_menu.scss */
+.main-nav .main-nav-inner a {
+  color: #4EB648;
+  display: block;
+  padding: 8px 0;
+}
+/* line 26, ../../stylesheets/rosario/_menu.scss */
+.main-nav .main-nav-inner a:hover {
+  text-decoration: none;
+}
+/* line 29, ../../stylesheets/rosario/_menu.scss */
+.main-nav .main-nav-inner a span {
+  font-family: 'Museo Slab 300';
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  vertical-align: middle;
+  margin-left: 25px;
+}
+/* line 38, ../../stylesheets/rosario/_menu.scss */
+.main-nav .main-nav-inner i::before {
+  font-size: 2.4rem;
+  vertical-align: middle;
+}
+/* line 43, ../../stylesheets/rosario/_menu.scss */
+.main-nav .main-nav-inner .separator {
+  border-top: 2px solid #4EB648;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+/* line 48, ../../stylesheets/rosario/_menu.scss */
+.main-nav .main-nav-inner .separator a span {
+  margin-left: 50px;
+}
+/* line 54, ../../stylesheets/rosario/_menu.scss */
+.main-nav .main-nav-inner .separator + .nav-item a span {
+  margin-left: 50px;
 }
 
 /* line 1, ../../stylesheets/rosario/_principal.scss */
