@@ -9010,6 +9010,134 @@ button.close {
   font-weight: 200;
   font-style: italic;
 }
+/* line 2, ../../stylesheets/rosario/_header.scss */
+header.navbar-fixed-top {
+  background: #4EB648;
+  color: #ffffff;
+  font-family: 'Museo Slab 500';
+  text-transform: uppercase;
+}
+/* line 7, ../../stylesheets/rosario/_header.scss */
+header.navbar-fixed-top .navbar-header {
+  position: relative;
+  width: 100%;
+}
+/* line 10, ../../stylesheets/rosario/_header.scss */
+header.navbar-fixed-top .navbar-header .icon-logo {
+  position: absolute;
+  top: 50%;
+  right: 9px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 16, ../../stylesheets/rosario/_header.scss */
+header.navbar-fixed-top .navbar-header .icon-logo::before {
+  font-size: 4rem;
+}
+/* line 21, ../../stylesheets/rosario/_header.scss */
+header.navbar-fixed-top .navbar-toggle {
+  margin-left: 6px;
+}
+/* line 23, ../../stylesheets/rosario/_header.scss */
+header.navbar-fixed-top .navbar-toggle .icon-bar {
+  background: #ffffff;
+}
+@media (min-width: 768px) {
+  /* line 21, ../../stylesheets/rosario/_header.scss */
+  header.navbar-fixed-top .navbar-toggle {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  /* line 21, ../../stylesheets/rosario/_header.scss */
+  header.navbar-fixed-top .navbar-toggle {
+    display: block;
+  }
+}
+/* line 33, ../../stylesheets/rosario/_header.scss */
+header.navbar-fixed-top .app-name {
+  width: 200px;
+  float: none;
+  display: block;
+  margin: 15px auto;
+}
+
+/* line 1, ../../stylesheets/rosario/_principal.scss */
+.withNav {
+  margin-top: 50px;
+}
+
+/* line 4, ../../stylesheets/rosario/_principal.scss */
+.secondary-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  height: calc( 100vh - 50px);
+  overflow: scroll;
+}
+@media (min-width: 768px) {
+  /* line 4, ../../stylesheets/rosario/_principal.scss */
+  .secondary-nav {
+    -ms-flex-line-pack: center;
+    align-content: center;
+    overflow: auto;
+  }
+}
+/* line 26, ../../stylesheets/rosario/_principal.scss */
+.secondary-nav .second-nav-item {
+  width: 46%;
+  padding: 10px 0;
+}
+@media (min-width: 992px) {
+  /* line 26, ../../stylesheets/rosario/_principal.scss */
+  .secondary-nav .second-nav-item {
+    width: 23%;
+  }
+}
+/* line 32, ../../stylesheets/rosario/_principal.scss */
+.secondary-nav .second-nav-item a,
+.secondary-nav .second-nav-item i,
+.secondary-nav .second-nav-item span {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 42, ../../stylesheets/rosario/_principal.scss */
+.secondary-nav .second-nav-item i::before {
+  font-size: 5rem;
+}
+@media (min-width: 768px) {
+  /* line 42, ../../stylesheets/rosario/_principal.scss */
+  .secondary-nav .second-nav-item i::before {
+    font-size: 10rem;
+  }
+}
+/* line 49, ../../stylesheets/rosario/_principal.scss */
+.secondary-nav .second-nav-item span {
+  font-family: 'Museo Slab 300';
+  font-size: 2rem;
+  margin-top: 15px;
+}
+@media (min-width: 768px) {
+  /* line 49, ../../stylesheets/rosario/_principal.scss */
+  .secondary-nav .second-nav-item span {
+    font-size: 4rem;
+  }
+}
+
 /* line 1, ../../stylesheets/rosario/_splash.scss */
 .mainbg {
   background: url("../img/bg.svg") no-repeat;

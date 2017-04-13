@@ -1,0 +1,40 @@
+header {
+    &.navbar-fixed-top {
+        background: $green;
+        color: $white;
+        font-family: 'Museo Slab 500';
+        text-transform: uppercase;
+        .navbar-header {
+            position: relative;
+            width: 100%;
+            .icon-logo {
+                position: absolute;
+                top: 50%;
+                right: 9px;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                &::before {
+                    font-size: 4rem;
+                }
+            }
+        }
+        .navbar-toggle {
+            margin-left: 6px;
+            .icon-bar {
+                background: $white;
+            }
+            @media (min-width: $screen-sm-min) {
+                display: block;
+            }
+            @media (min-width: $screen-md-min) {
+                display: block;
+            }
+        }
+        .app-name {
+            width: 200px;
+            float: none;
+            display: block;
+            margin: 15px auto;
+        }
+    }
+}
